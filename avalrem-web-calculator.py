@@ -385,7 +385,7 @@ with tab3:
         • Pre-Action Predict: <code>#z^ [Action] ::: [C]: [Val] ::: [a]: [Val] ::: [i]: [Val]</code><br>
         • Post-Action Commit: <code>#z* [Action] ::: [C]: [Val] ::: [a]: [Val] ::: [i]: [Val]</code>
     </div>
-    """, unsafe_style_html=True)
+    """, unsafe_allow_html=True)
     
     command_input = st.text_input(
         "Enter Command String:", 
