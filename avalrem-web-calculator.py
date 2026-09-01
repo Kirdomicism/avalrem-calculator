@@ -93,7 +93,7 @@ st.markdown("""
         transform: scale(1.02);
     }
 </style>
-""", unsafe_style_html=True)
+""", unsafe_allow_html=True)
 
 # Standard Kirdomic Action Verbs & Coefficients
 VERB_PRESETS = {
