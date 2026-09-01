@@ -334,7 +334,7 @@ with tab2:
                     Avalrem = {input_C} / {denominator:.3f}<br>
                     Result = <b>{avalrem_val:.2f} AVR</b>
                 </div>
-                """, unsafe_style_html=True)
+                """, unsafe_allow_html=True)
         else:
             denominator = input_a - input_i - input_g
             if denominator <= 0:
@@ -349,7 +349,7 @@ with tab2:
                     Terminal Avalrem = {input_C} / {denominator:.3f}<br>
                     Result = <b>{avalrem_val:.2f} AVR</b>
                 </div>
-                """, unsafe_style_html=True)
+                """, unsafe_allow_html=True)
                 
         # Interactive Decision Optimization Insights
         st.markdown("##### 🔍 Humanic Intelligence Feedback")
@@ -475,4 +475,4 @@ with st.sidebar:
     st.write("🧬 **Dexterience:** Shifting from waiting for perfect conditions to executing cleanly with what you have on hand.")
     st.write("📊 **Avalremy:** Measuring human contribution and future-readiness through the quantitative value of physical actions.")
     st.write("---")
-    st.markdown("<div style='text-align:center; color:#A0AEC0;'>Kirdomic Academy © 2026</div>", unsafe_style_html=True)
+    st.markdown("<div style='text-align:center; color:#A0AEC0;'>Kirdomic Academy © 2026</div>", unsafe_allow_html=True)
