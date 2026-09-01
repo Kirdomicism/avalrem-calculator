@@ -177,8 +177,8 @@ def add_to_ledger(action_name, code, C, a, i, formula_type, result, status="Vali
 # ------------------------------------------------------------------------------
 # Main Page Render Layout
 # ------------------------------------------------------------------------------
-st.markdown("<h1 class='main-title'>🧠 KIRDOMICISM ACADEMY</h1>", unsafe_style_html=True)
-st.markdown("<div class='sub-title'>Universal Avalrem Web Calculator (Open-Core Pilot v1.0)</div>", unsafe_style_html=True)
+st.markdown("<h1 class='main-title'>🧠 KIRDOMICISM ACADEMY</h1>", unsafe_allow_html=True)
+st.markdown("<div class='sub-title'>Universal Avalrem Web Calculator (Open-Core Pilot v1.0)</div>", unsafe_allow_html=True)
 
 # Main Stats Dashboard Row
 col_stat1, col_stat2, col_stat3, col_stat4 = st.columns(4)
@@ -195,7 +195,7 @@ with col_stat1:
         <div class='stat-val'>{total_nava:.2f}</div>
         <div class='stat-lbl'>🔐 Accumulated NAVA</div>
     </div>
-    """, unsafe_style_html=True)
+    """, unsafe_allow_html=True)
 
 with col_stat2:
     st.markdown(f"""
@@ -203,7 +203,7 @@ with col_stat2:
         <div class='stat-val'>{pending_nava:.2f}</div>
         <div class='stat-lbl'>⏳ Pending Predictions (^)</div>
     </div>
-    """, unsafe_style_html=True)
+    """, unsafe_allow_html=True)
 
 with col_stat3:
     st.markdown(f"""
@@ -211,7 +211,7 @@ with col_stat3:
         <div class='stat-val'>${total_equity:,.2f}</div>
         <div class='stat-lbl'>💸 Value Equity (USD)</div>
     </div>
-    """, unsafe_style_html=True)
+    """, unsafe_allow_html=True)
 
 with col_stat4:
     st.markdown(f"""
@@ -219,7 +219,7 @@ with col_stat4:
         <div class='stat-val'>{total_txs}</div>
         <div class='stat-lbl'>⛓️ Ledger Transactions</div>
     </div>
-    """, unsafe_style_html=True)
+    """, unsafe_allow_html=True)
 
 st.write("")
 
