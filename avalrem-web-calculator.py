@@ -235,7 +235,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
 # TAB 1: INTERACTIVE ACTION GRID
 # ==============================================================================
 with tab1:
-    st.markdown("<h3 class='kirdomic-header'>Play the Keyboard of Execution</h3>", unsafe_style_html=True)
+    st.markdown("<h3 class='kirdomic-header'>Play the Keyboard of Execution</h3>", unsafe_allow_html=True)
     st.write("Click on any coded cell below to load its focus perspective, mode, and standard parameters into your active workspace:")
     
     # 5x5 Grid Layout
@@ -276,7 +276,7 @@ with tab1:
 # TAB 2: ALGORITHMIC CALCULATOR
 # ==============================================================================
 with tab2:
-    st.markdown("<h3 class='kirdomic-header'>Verify Your Action Value</h3>", unsafe_style_html=True)
+    st.markdown("<h3 class='kirdomic-header'>Verify Your Action Value</h3>", unsafe_allow_html=True)
     
     # Left Input Configuration, Right Real-Time Results
     col_calc_left, col_calc_right = st.columns([1, 1])
@@ -376,7 +376,7 @@ with tab2:
 # TAB 3: #z COMMAND PROTOCOL CONSOLE
 # ==============================================================================
 with tab3:
-    st.markdown("<h3 class='kirdomic-header'>Sovereign Interface Command Console</h3>", unsafe_style_html=True)
+    st.markdown("<h3 class='kirdomic-header'>Sovereign Interface Command Console</h3>", unsafe_allow_html=True)
     st.write("Write and process raw command-line text strings to query, predict, and log actions directly using Kirdomic syntax:")
     
     st.markdown("""
@@ -434,7 +434,7 @@ with tab3:
 # TAB 4: SOVEREIGN LEGACY LEDGER
 # ==============================================================================
 with tab4:
-    st.markdown("<h3 class='kirdomic-header'>Cryptographic Block Chain Registry</h3>", unsafe_style_html=True)
+    st.markdown("<h3 class='kirdomic-header'>Cryptographic Block Chain Registry</h3>", unsafe_allow_html=True)
     st.write("Verifiable and immutable digital audit trail of your lifetime contribution to reality:")
     
     if not st.session_state.ledger:
@@ -467,7 +467,7 @@ with tab4:
 # Sidebar Context Panel
 # ------------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("<h2 style='color:#D4AF37; font-family:Georgia;'>🧠 Kirdomic Lexicon</h2>", unsafe_style_html=True)
+    st.markdown("<h2 style='color:#D4AF37; font-family:Georgia;'>🧠 Kirdomic Lexicon</h2>", unsafe_allow_html=True)
     st.write("---")
     st.write("🛡️ **Atammayata:** Achieving absolute unconcoctability, protecting consciousness from 'emotional cooking' or crises.")
     st.write("🐍 **Exdysivity:** Continuous, natural renewal by willingly shedding obsolete habits, standards, and rules.")
